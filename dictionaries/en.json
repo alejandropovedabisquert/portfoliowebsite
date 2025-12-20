@@ -12,7 +12,7 @@
       "CTAs": [
         {
           "label": "Contact Me",
-          "href": "/#contact",
+          "href": "mailto:alejandropovedabisquert@gmail.com",
           "target": "_self",
           "icon": "mail"
         },
@@ -215,22 +215,22 @@
   "navigation": [
     {
       "label": "Experience",
-      "href": "/#experiencia",
+      "href": "#experiencia",
       "scrollTo": true
     },
     {
       "label": "Projects",
-      "href": "/#proyectos",
+      "href": "#proyectos",
       "scrollTo": true
     },
     {
       "label": "Stack",
-      "href": "/#stack",
+      "href": "#stack",
       "scrollTo": true
     },
     {
       "label": "About Me",
-      "href": "/#sobre-mi",
+      "href": "#sobre-mi",
       "scrollTo": true
     },
     {
@@ -253,5 +253,9 @@
         "target": "_blank"
       }
     ]
+  },
+  "switchLanguage": {
+    "aria-selector": "Language Selector",
+    "aria-options": "Language Options"
   }
 }

@@ -7,7 +7,7 @@ import LocaleSwitcherCustom from "../common/locale-switcher/LocaleSwitcherCustom
 export default function HeaderNav({
   dict,
 }: {
-  dict: Awaited<ReturnType<typeof getDictionary>>["navigation"];
+  dict: Awaited<ReturnType<typeof getDictionary>>;
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,6 +16,7 @@ export default function HeaderNav({
   ) => {
     e.preventDefault();
     const href = e.currentTarget.getAttribute("href");
+    const body = document.body;
 
     if (!href) return;
 
@@ -30,7 +31,8 @@ export default function HeaderNav({
         behavior: "smooth",
         block: "start",
       });
-      toggleMenu();
+      body.style.removeProperty("overflow");
+      setIsMenuOpen(false);
     }
   };
 
@@ -39,7 +41,7 @@ export default function HeaderNav({
     if (!isMenuOpen) {
       body.style.overflow = "hidden";
     } else {
-      body.style.overflow = "auto";
+      body.style.removeProperty("overflow");
     }
     setIsMenuOpen(!isMenuOpen);
   };
@@ -79,7 +81,7 @@ export default function HeaderNav({
           ${isMenuOpen ? "translate-x-0" : "translate-x-full md:translate-x-0"}
         `}
       >
-        {dict.map((item, idx) => (
+        {dict.navigation.map((item, idx) => (
           <li key={idx} className="font-bold text-xl md:text-base main:text-xl">
             <LinkCustom
               label={item.label}
@@ -89,7 +91,7 @@ export default function HeaderNav({
           </li>
         ))}
         <li>
-          <LocaleSwitcherCustom />
+          <LocaleSwitcherCustom dict={dict.switchLanguage}/>
         </li>
       </ul>
       {isMenuOpen && (

@@ -3,27 +3,6 @@ import type { NextRequest } from "next/server";
 
 import { i18n } from "./i18n-config";
 
-import { match as matchLocale } from "@formatjs/intl-localematcher";
-import Negotiator from "negotiator";
-
-function getLocale(request: NextRequest): string | undefined {
-  // Negotiator expects plain object so we need to transform headers
-  const negotiatorHeaders: Record<string, string> = {};
-  request.headers.forEach((value: string, key: string) => (negotiatorHeaders[key] = value));
-
-  const locales = Array.from(i18n.locales);
-
-  // Use negotiator and intl-localematcher to get best locale
-  const languages = new Negotiator({ headers: negotiatorHeaders }).languages(
-    locales,
-  );
-
-  const locale = matchLocale(languages, locales, i18n.defaultLocale);
-
-  return locale;
-}
-
-// TODO: Revisar porque si no tiene locale en la url pilla el locale del navegador y no el por defecto
 export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
@@ -39,14 +18,14 @@ export function proxy(request: NextRequest) {
     return
   
   // If URL has default locale prefix, redirect to URL without locale
-  // if (pathname.startsWith(`/${i18n.defaultLocale}/`) || pathname === `/${i18n.defaultLocale}`) {
-  //   return NextResponse.redirect(
-  //     new URL(
-  //       pathname.replace(`/${i18n.defaultLocale}`, '') || '/',
-  //       request.url,
-  //     ),
-  //   );
-  // }
+  if (pathname.startsWith(`/${i18n.defaultLocale}/`) || pathname === `/${i18n.defaultLocale}`) {
+    return NextResponse.redirect(
+      new URL(
+        pathname.replace(`/${i18n.defaultLocale}`, '') || '/',
+        request.url,
+      ),
+    );
+  }
 
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every(
@@ -56,7 +35,7 @@ export function proxy(request: NextRequest) {
 
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
-    const locale = getLocale(request);
+    const locale = i18n.defaultLocale;
 
     // e.g. incoming request is /products
     // The new URL is now /en-US/products

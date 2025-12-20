@@ -18,7 +18,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
   return (
     <>
       <header className="max-w-main mx-2 border-l-3 border-r-3 border-l-primary border-r-primary p-4 main:p-8 main:mx-auto">
-        <HeaderNav dict={dict.navigation} />
+        <HeaderNav dict={dict} />
       </header>
       <DivisorCustom />
       <main className="max-w-main mx-2 border-l-3 border-r-3 border-l-primary border-r-primary p-4 main:p-8 main:mx-auto overflow-x-hidden">

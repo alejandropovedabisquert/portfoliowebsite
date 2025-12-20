@@ -4,8 +4,13 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { i18n, type Locale } from "@/i18n-config";
 import { useState, useRef, useEffect } from "react";
+import { getDictionary } from "@/getDictionaries";
 
-export default function LocaleSwitcherCustom() {
+export default function LocaleSwitcherCustom({
+  dict,
+}: {
+  dict: Awaited<ReturnType<typeof getDictionary>>["switchLanguage"];
+}) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -71,7 +76,7 @@ export default function LocaleSwitcherCustom() {
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-haspopup="true"
-        aria-label="Selector de idioma"
+        aria-label={dict["aria-selector"]}
         className="relative flex items-center gap-2 font-bold text-xl md:text-base main:text-xl cursor-pointer after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-3 after:bg-accent after:-z-10 hover:after:scale-x-100 after:scale-x-0 after:origin-bottom-left after:transition-transform after:duration-300"
       >
         <span className="text-lg" aria-hidden="true">
@@ -99,7 +104,7 @@ export default function LocaleSwitcherCustom() {
       {isOpen && (
         <nav
           role="menu"
-          aria-label="Opciones de idioma"
+          aria-label={dict["aria-options"]}
           className="absolute left-0 md:left-auto md:right-0 mt-2 w-48 shadow-lg bg-background border-2 border-primary z-50"
         >
           <ul>

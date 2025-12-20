@@ -215,22 +215,22 @@
   "navigation": [
     {
       "label": "Experiencia",
-      "href": "/#experiencia",
+      "href": "#experiencia",
       "scrollTo": true
     },
     {
       "label": "Proyectos",
-      "href": "/#proyectos",
+      "href": "#proyectos",
       "scrollTo": true
     },
     {
       "label": "Stack",
-      "href": "/#stack",
+      "href": "#stack",
       "scrollTo": true
     },
     {
       "label": "Sobre Mí",
-      "href": "/#sobre-mi",
+      "href": "#sobre-mi",
       "scrollTo": true
     },
     {
@@ -253,5 +253,9 @@
         "target": "_blank"
       }
     ]
+  },
+  "switchLanguage": {
+    "aria-selector": "Selector de idioma",
+    "aria-options": "Opciones de idioma"
   }
 }
