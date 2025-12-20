@@ -1,5 +1,257 @@
 {
-  "products": {
-    "cart": "Añadir al carrito"
+  "portfolio": {
+    "meta": {
+      "title": "Portafolio de Alejandro Poveda - Desarrollador y Programador Web con más de 3 años de experiencia",
+      "description": "Contrata a Alejandro Poveda. Desarrollador Web. Especializado en crear webs diferentes y accesibles."
+    },
+    "presentation": {
+      "title": "Soy Alejandro",
+      "job": "Desarrollador <span>Frontend</span>",
+      "description": "<strong>+3 años de experiencia</strong> desde Valencia, España 🇪🇸. Me especializo en transformar ideas en aplicaciones web <strong>diferentes</strong> y <strong>accesibles</strong> para todos.",
+      "stack": "Mi <strong>stack</strong> favorito: Next.js · React · TailwindCSS",
+      "CTAs": [
+        {
+          "label": "Contáctame",
+          "href": "mailto:alejandropovedabisquert@gmail.com",
+          "target": "_self",
+          "icon": "mail"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/alejandropovedabisquert/",
+          "target": "_blank",
+          "icon": "github"
+        },
+        {
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/in/alejandro-poveda-bisquert/",
+          "target": "_blank",
+          "icon": "linkedin"
+        },
+        {
+          "label": "Descargar mi CV",
+          "href": "/Tu_CV.pdf",
+          "target": "_blank",
+          "icon": "download"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiencia laboral",
+      "jobs": [
+        {
+          "logo": "/experience/avantio.webp",
+          "logoAlt": "Logo de Avantio",
+          "position": "Programador Web",
+          "company": "Avantio",
+          "duration": "Mayo 2023 - Actualidad",
+          "description": "Desarrollo de plataformas web optimizadas para el sector turístico con foco en conversión y experiencia de usuario. Creación de extensión Chrome para automatización de procesos, reduciendo tiempos de resolución de incidencias para equipos de Project Managers.  Mantenimiento proactivo del framework interno y aplicación de estándares de accesibilidad, garantizando calidad técnica y operatividad continua.",
+          "stack": [
+            "javascript",
+            "html",
+            "sass",
+            "php"
+          ]
+        },
+        {
+          "logo": "/experience/digitalvalue.webp",
+          "logoAlt": "Logo de Digital Value",
+          "position": "Programador Web Junior",
+          "company": "Digital Value",
+          "duration": "Marzo 2021 - Mayo 2023",
+          "description": "Webmaster especializado en Drupal, responsable de la gestión y  mantenimiento de portales institucionales de ayuntamientos en la  Comunidad Valenciana y otras regiones.  Análisis e implementación de  mejoras de accesibilidad web conforme a normativas, optimizando la  usabilidad para usuarios con discapacidad. Atención técnica directa a  clientes institucionales, garantizando resolución efectiva de  incidencias y alta satisfacción en los proyectos.",
+          "stack": [
+            "javascript",
+            "html",
+            "css",
+            "drupal"
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Proyectos",
+      "featured": [
+        {
+          "title": "Heart of Fantasy",
+          "inDevelopment": "En Desarrollo",
+          "description": "Pagina web multiidioma de un MMORPG de supervivencia con permadeath y un mundo generado proceduralmente.",
+          "image": "/projects/featured/heart-of-fantasy.webp",
+          "CTAs": [
+            {
+              "icon": "github",
+              "label": "Ver Código",
+              "href": "https://github.com/alejandropovedabisquert/heartoffantasywebsite",
+              "target": "_blank"
+            },
+            {
+              "icon": "globe",
+              "label": "Ver Proyecto",
+              "href": "https://heartoffantasywebsite.vercel.app/",
+              "target": "_blank"
+            }
+          ],
+          "stack": [
+            "nextjs",
+            "react",
+            "typescript",
+            "tailwindcss"
+          ]
+        },
+        {
+          "title": "GameHub",
+          "inDevelopment": false,
+          "description": "GameHub es una web que permite a los usuarios explorar una amplia colección de videojuegos, filtrarlos,  buscar títulos y ver información detallada de cada juego.",
+          "image": "/projects/featured/gamehub.webp",
+          "CTAs": [
+            {
+              "icon": "github",
+              "label": "Ver Código",
+              "href": "https://github.com/alejandropovedabisquert/gamehub",
+              "target": "_blank"
+            },
+            {
+              "icon": "globe",
+              "label": "Ver Proyecto",
+              "href": "https://gamehub-three-lime.vercel.app/",
+              "target": "_blank"
+            }
+          ],
+          "stack": [
+            "angular",
+            "typescript",
+            "sass"
+          ]
+        }
+      ]
+    },
+    "stack": {
+      "title": "Stack",
+      "categories": [
+        {
+          "name": "Frontend",
+          "technologies": [
+            {
+              "name": "nextjs",
+              "basic": false
+            },
+            {
+              "name": "react",
+              "basic": false
+            },
+            {
+              "name": "tailwindcss",
+              "basic": false
+            },
+            {
+              "name": "typescript",
+              "basic": false
+            },
+            {
+              "name": "javascript",
+              "basic": false
+            },
+            {
+              "name": "sass",
+              "basic": false
+            },
+            {
+              "name": "css",
+              "basic": false
+            },
+            {
+              "name": "html",
+              "basic": false
+            },
+            {
+              "name": "angular",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Backend",
+          "technologies": [
+            {
+              "name": "php",
+              "basic": false
+            },
+            {
+              "name": "laravel",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Herramientas & Plataformas",
+          "technologies": [
+            {
+              "name": "git",
+              "basic": false
+            },
+            {
+              "name": "github",
+              "basic": false
+            },
+            {
+              "name": "postman",
+              "basic": true
+            }
+          ]
+        }
+      ]
+    },
+    "about": {
+      "title": "Sobre mí",
+      "imgage": "/about/me.webp",
+      "imageAlt": "Foto de la moto de Alejandro Poveda",
+      "description": [
+        "Soy Alejandro Poveda, un <strong>Frontend Developer</strong> que disfruta crear webs <strong>visualmente atractivas y accesibles</strong>. Me gusta entregar aplicaciones que combinen funcionalidad con un toque artístico.",
+        "Llevo más de 3 años desarrollando desde <strong>Valencia, España</strong>, y me especializo  en <strong>React, Next.js y JavaScript</strong>, siempre intentando escribir código limpio  y mantenible.",
+        "Cuando no estoy programando, probablemente esté en la moto, explorando  nuevas tecnologías, jugando videojuegos o buscando inspiración artística."
+      ]
+    }
+  },
+  "navigation": [
+    {
+      "label": "Experiencia",
+      "href": "/#experiencia",
+      "scrollTo": true
+    },
+    {
+      "label": "Proyectos",
+      "href": "/#proyectos",
+      "scrollTo": true
+    },
+    {
+      "label": "Stack",
+      "href": "/#stack",
+      "scrollTo": true
+    },
+    {
+      "label": "Sobre Mí",
+      "href": "/#sobre-mi",
+      "scrollTo": true
+    },
+    {
+      "label": "Contacto",
+      "href": "mailto:alejandropovedabisquert@gmail.com",
+      "scrollTo": false
+    }
+  ],
+  "footer": {
+    "text": "Alejandro Poveda",
+    "navigation": [
+      {
+        "label": "Linkedin",
+        "href": "https://www.linkedin.com/in/alejandro-poveda-bisquert/",
+        "target": "_blank"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/alejandropovedabisquert",
+        "target": "_blank"
+      }
+    ]
   }
 }
