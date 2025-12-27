@@ -59,6 +59,10 @@ export const StackMap = {
     name: "Laravel",
     icon: "/stack/icons/laravel.webp",
   },
+  docker: {
+    name: "Docker",
+    icon: "/stack/icons/docker.webp",
+  },
 } as const;
 
 export type StackKey = keyof typeof StackMap;

@@ -30,7 +30,7 @@
         },
         {
           "label": "Download my CV",
-          "href": "/Tu_CV.pdf",
+          "href": "/pdf/CV_Alejandro_Poveda_Bisquert.pdf",
           "target": "_blank",
           "icon": "download"
         }
@@ -195,6 +195,10 @@
             },
             {
               "name": "postman",
+              "basic": true
+            },
+            {
+              "name": "docker",
               "basic": true
             }
           ]
