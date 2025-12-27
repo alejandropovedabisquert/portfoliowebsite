@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /*.pdf
+
+Sitemap: https://www.alejandropoveda.es/sitemap.xml
