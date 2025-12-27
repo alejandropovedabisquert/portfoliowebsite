@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { getDictionary } from "@/getDictionaries";
 import "./globals.css";
 import { Locale } from "@/i18n-config";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default async function RootLayout({
 }: LayoutProps<"/[lang]">) {
   return (
     <html lang={(await params).lang} className="scroll-smooth">
+      <Analytics />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
