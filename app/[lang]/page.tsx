@@ -28,7 +28,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <Stack dict={dict.portfolio.stack} />
         <About dict={dict.portfolio.about} />
       </main>
-      <DivisorCustom className="mx-0 ml-auto mr-0" />
+      <DivisorCustom />
       <footer className="max-w-main mx-2 border-l-3 border-r-3 border-l-primary border-r-primary p-4 main:p-8 main:mx-auto">
         <FooterNav dict={dict.footer} />
       </footer>
