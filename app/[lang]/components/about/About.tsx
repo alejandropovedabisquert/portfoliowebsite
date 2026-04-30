@@ -26,7 +26,7 @@ export default function About({
       </div>
       <div>
         <article className="mt-18 sm:mt-24 flex flex-col md:flex-row gap-8">
-          <div className="md:w-2/3">
+          <div className="">
             {dict.description.map((paragraph, idx) => (
               <p
                 key={idx}
@@ -35,7 +35,7 @@ export default function About({
               ></p>
             ))}
           </div>
-          <div className="md:w-1/3 flex justify-center items-start">
+          {/* <div className="md:w-1/3 flex justify-center items-start">
             <Image
               src={dict.imgage}
               alt={dict.imageAlt}
@@ -43,7 +43,7 @@ export default function About({
               height={300}
               className="rotate-12 w-64 h-64 sm:w-80 sm:h-80 object-cover border-4 border-primary sm:mr-8"
             />
-          </div>
+          </div> */}
         </article>
       </div>
     </div>

@@ -54,6 +54,26 @@ export const TagMap = {
     color: "#dd0031",
     icon: "/tagIcons/angular.webp",
   },
+  shadcnui: {
+    name: "ShadCN UI",
+    color: "#000000",
+    icon: "/tagIcons/shadcnui.webp",
+  },
+  docker: {
+    name: "Docker",
+    color: "#0db7ed",
+    icon: "/tagIcons/docker.webp",
+  },
+  nodejs: {
+    name: "Node.js",
+    color: "#339933",
+    icon: "/tagIcons/nodejs.webp",
+  },
+  mongodb: {
+    name: "MongoDB",
+    color: "#47a248",
+    icon: "/tagIcons/mongodb.webp",
+  },
 } as const;
 
 export type TagKey = keyof typeof TagMap;

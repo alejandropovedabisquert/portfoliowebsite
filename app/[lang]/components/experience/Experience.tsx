@@ -46,18 +46,18 @@ export default function Experience({
                   </h3>
                   <h4 className="text-xl font-semibold">{job.company}</h4>
                   <p className="text-base text-gray-800">{job.duration}</p>
-                  <div className="mt-4">
-                    <ul className="flex flex-wrap gap-1">
+                  {/* <div className="mt-4">
+                    <ul className="flex flex-wrap gap-1 main:mr-2">
                       {job.stack.map((tag, idx) => (
                         <li key={idx}>
                           <TagCustom tag={tag as TagKey} />
                         </li>
                       ))}
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="w-full md:w-[60%] md:mt-8">
-                  <p className="mt-2 text-lg">{job.description}</p>
+                  <p className="mt-2 text-lg" dangerouslySetInnerHTML={{ __html: job.description }}/>
                 </div>
               </div>
             </li>

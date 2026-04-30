@@ -49,16 +49,16 @@ export default function Stack({
                   return (
                     <li
                       key={idx}
-                      className="flex flex-col items-center relative"
+                      className="flex flex-col items-center gap-2 relative border-4 border-primary p-2 transition-all duration-300 bg-accent/10 hover:border-accent hover:rounded hover:bg-primary/10 hover:scale-105"
                     >
                       <Image
                         src={stackInfo.icon}
                         alt={stackInfo.name}
                         width={50}
                         height={50}
-                        className="w-12 h-12 object-contain mb-2"
+                        className="w-10 h-10 object-contain"
                       />
-                      <span className="text-center font-semibold text-lg after:content-[''] after:absolute after:bottom-0.5 after:left-[50%] after:-translate-x-[50%] after:w-[80%] md:after:w-full after:h-3 after:bg-accent after:-z-10">
+                      <span className="text-center font-semibold text-base">
                         {stackInfo.name}
                       </span>
                     </li>

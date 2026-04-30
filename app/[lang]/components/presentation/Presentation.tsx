@@ -2,7 +2,7 @@ import { getDictionary } from "@/getDictionaries";
 import Image from "next/image";
 import TitleCustom from "../common/title/TitleCustom";
 import CTACustom from "../common/cta/CTACustom";
-import { CTAKey } from "../common/cta/ctas.config";
+import { IconKey } from "../common/icon/icon.config";
 
 export default function Presentation({
   dict,
@@ -51,10 +51,6 @@ export default function Presentation({
             className="text-lg"
             dangerouslySetInnerHTML={{ __html: dict.description }}
           />
-          <p
-            className="text-lg"
-            dangerouslySetInnerHTML={{ __html: dict.stack }}
-          />
         </article>
         <div className="flex gap-2 flex-wrap mt-2">
           {dict.CTAs.map((cta, idx) => {
@@ -64,7 +60,7 @@ export default function Presentation({
                 label={cta.label}
                 href={cta.href}
                 target={cta.target}
-                icon={cta.icon as CTAKey}
+                icon={cta.icon as IconKey}
               />
             );
           })}

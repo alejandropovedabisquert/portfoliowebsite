@@ -63,6 +63,14 @@ export const StackMap = {
     name: "Docker",
     icon: "/stack/icons/docker.webp",
   },
+  mongodb: {
+    name: "MongoDB",
+    icon: "/stack/icons/mongodb.webp",
+  },
+  nodejs: {
+    name: "Node.js",
+    icon: "/stack/icons/nodejs.webp",
+  },
 } as const;
 
 export type StackKey = keyof typeof StackMap;

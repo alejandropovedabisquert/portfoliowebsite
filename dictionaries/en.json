@@ -8,7 +8,6 @@
       "title": "I'm Alejandro",
       "job": "Frontend <span>Developer</span>",
       "description": "<strong>+3 years of experience</strong> from Valencia, Spain 🇪🇸. I specialize in transforming ideas into <strong>different</strong> and <strong>accessible</strong> web applications for everyone.",
-      "stack": "My favorite <strong>stack</strong>: Next.js · React · TailwindCSS",
       "CTAs": [
         {
           "label": "Contact Me",
@@ -29,7 +28,7 @@
           "icon": "linkedin"
         },
         {
-          "label": "Download my CV",
+          "label": "Download CV",
           "href": "/pdf/CV_Alejandro_Poveda_Bisquert.pdf",
           "target": "_blank",
           "icon": "download"
@@ -45,7 +44,7 @@
           "position": "Web Developer",
           "company": "Avantio",
           "duration": "May 2023 - Present",
-          "description": "Development of optimized web platforms for the tourism sector focusing on conversion and user experience. Creation of a Chrome extension for process automation, reducing incident resolution times for Project Manager teams. Proactive maintenance of the internal framework and application of accessibility standards, ensuring technical quality and continuous operability.",
+          "description": "<strong>Development of optimized web platforms</strong> for the tourism sector focusing on <strong>conversion</strong> and <strong>user experience</strong>. <strong>Creation of a Chrome extension</strong> for <strong>process automation</strong>, reducing incident resolution times for Project Manager teams. <strong>Proactive maintenance of the internal framework</strong> and application of <strong>accessibility standards</strong>, ensuring <strong>technical quality</strong> and <strong>continuous operability</strong>.",
           "stack": [
             "javascript",
             "html",
@@ -59,7 +58,7 @@
           "position": "Junior Web Developer",
           "company": "Digital Value",
           "duration": "March 2021 - May 2023",
-          "description": "Webmaster specialized in Drupal, responsible for the management and maintenance of institutional portals for city councils in the Valencian Community and other regions. Analysis and implementation of web accessibility improvements according to regulations, optimizing usability for users with disabilities. Direct technical support to institutional clients, ensuring effective incident resolution and high satisfaction in projects.",
+          "description": "<strong>Webmaster specialized in Drupal</strong>, responsible for the <strong>management and maintenance of institutional portals</strong> for city councils in the <strong>Valencian Community</strong> and other regions. <strong>Analysis and implementation of web accessibility improvements</strong> according to regulations, optimizing <strong>usability for users with disabilities</strong>. <strong>Direct technical support to institutional clients</strong>, ensuring <strong>effective incident resolution</strong> and <strong>high satisfaction</strong> in projects.",
           "stack": [
             "javascript",
             "html",
@@ -99,6 +98,29 @@
           ]
         },
         {
+          "title": "User Management System",
+          "description": "User management system for web applications, allowing the administration of user roles and profiles.",
+          "image": "/projects/featured/user-manager.webp",
+          "CTAs": [
+            {
+              "icon": "github",
+              "label": "View Code",
+              "href": "https://github.com/alejandropovedabisquert/usermanager",
+              "target": "_blank"
+            }
+          ],
+          "stack": [
+            "nextjs",
+            "react",
+            "nodejs",
+            "mongodb",
+            "typescript",
+            "tailwindcss",
+            "shadcnui",
+            "docker"
+          ]
+        },
+        {
           "title": "GameHub",
           "inDevelopment": false,
           "description": "GameHub is a website that allows users to explore a wide collection of video games, filter them, search for titles, and view detailed information about each game.",
@@ -132,40 +154,31 @@
           "name": "Frontend",
           "technologies": [
             {
-              "name": "nextjs",
-              "basic": false
+              "name": "nextjs"
             },
             {
-              "name": "react",
-              "basic": false
+              "name": "react"
             },
             {
-              "name": "tailwindcss",
-              "basic": false
+              "name": "tailwindcss"
             },
             {
-              "name": "typescript",
-              "basic": false
+              "name": "typescript"
             },
             {
-              "name": "javascript",
-              "basic": false
+              "name": "javascript"
             },
             {
-              "name": "sass",
-              "basic": false
+              "name": "sass"
             },
             {
-              "name": "css",
-              "basic": false
+              "name": "css"
             },
             {
-              "name": "html",
-              "basic": false
+              "name": "html"
             },
             {
-              "name": "angular",
-              "basic": true
+              "name": "angular"
             }
           ]
         },
@@ -173,12 +186,16 @@
           "name": "Backend",
           "technologies": [
             {
-              "name": "php",
-              "basic": false
+              "name": "php"
             },
             {
-              "name": "laravel",
-              "basic": true
+              "name": "laravel"
+            },
+            {
+              "name": "nodejs"
+            },
+            {
+              "name": "mongodb"
             }
           ]
         },
@@ -186,20 +203,16 @@
           "name": "Tools & Platforms",
           "technologies": [
             {
-              "name": "git",
-              "basic": false
+              "name": "git"
             },
             {
-              "name": "github",
-              "basic": false
+              "name": "github"
             },
             {
-              "name": "postman",
-              "basic": true
+              "name": "postman"
             },
             {
-              "name": "docker",
-              "basic": true
+              "name": "docker"
             }
           ]
         }
@@ -210,21 +223,54 @@
       "imgage": "/about/me.webp",
       "imageAlt": "Photo of Alejandro Poveda's motorcycle",
       "description": [
-        "I am Alejandro Poveda, a <strong>Frontend Developer</strong> who enjoys creating <strong>visually appealing and accessible</strong> websites. I like delivering applications that combine functionality with an artistic touch.",
-        "I have been developing for over 3 years from <strong>Valencia, Spain</strong>, specializing in <strong>React, Next.js, and JavaScript</strong>, always striving to write clean and maintainable code.",
-        "When I'm not programming, I'm probably on my motorcycle, exploring new technologies, playing video games, or seeking artistic inspiration."
+        "<strong>Frontend Developer</strong> with several years of experience building <strong>modern, accessible, and visually polished web interfaces</strong>. My work is mainly focused on <strong>JavaScript and TypeScript</strong>, with expertise in <strong>React, Next.js, and Angular</strong>, technologies I use to create <strong>solid, maintainable products with a great user experience</strong>.",
+        "I enjoy combining <strong>functionality and design</strong> to develop solutions that not only work well, but also have personality. I’m currently expanding my knowledge of <strong>.NET</strong> to keep growing toward building more complete software products and solutions."
+      ]
+    },
+    "contact": {
+      "title": "Get in Touch with Me",
+      "description": "Interested in working together? Let's connect! You can send me an email, check out my code on GitHub, or connect with me on LinkedIn. You can also download my CV for more information about my experience and skills.",
+      "contactMethods": [
+        {
+          "icon": "mail",
+          "label": "Email",
+          "subtitle": "Send me a message",
+          "href": "mailto:alejandropovedabisquert@gmail.com",
+          "target": "_self"
+        },
+        {
+          "icon": "linkedin",
+          "label": "LinkedIn",
+          "subtitle": "Connect with me",
+          "href": "https://www.linkedin.com/in/alejandro-poveda-bisquert/",
+          "target": "_blank"
+        },
+        {
+          "icon": "github",
+          "label": "GitHub",
+          "subtitle": "View my code",
+          "href": "https://github.com/alejandropovedabisquert",
+          "target": "_blank"
+        },
+        {
+          "icon": "download",
+          "label": "Download CV",
+          "subtitle": "Get my resume",
+          "href": "/pdf/CV_Alejandro_Poveda_Bisquert.pdf",
+          "target": "_blank"
+        }
       ]
     }
   },
   "navigation": [
     {
-      "label": "Experience",
-      "href": "#experiencia",
+      "label": "About Me",
+      "href": "#sobre-mi",
       "scrollTo": true
     },
     {
-      "label": "Projects",
-      "href": "#proyectos",
+      "label": "Experience",
+      "href": "#experiencia",
       "scrollTo": true
     },
     {
@@ -233,14 +279,14 @@
       "scrollTo": true
     },
     {
-      "label": "About Me",
-      "href": "#sobre-mi",
+      "label": "Projects",
+      "href": "#proyectos",
       "scrollTo": true
     },
     {
       "label": "Contact",
-      "href": "mailto:alejandropovedabisquert@gmail.com",
-      "scrollTo": false
+      "href": "#contacto",
+      "scrollTo": true
     }
   ],
   "footer": {

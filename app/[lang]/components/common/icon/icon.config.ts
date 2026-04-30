@@ -8,4 +8,4 @@ export const IconMap = {
   globe: Globe
 } as const;
 
-export type CTAKey = keyof typeof IconMap;
+export type IconKey = keyof typeof IconMap;

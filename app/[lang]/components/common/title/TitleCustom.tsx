@@ -16,7 +16,7 @@ export default function TitleCustom({
 }) {
   return (
     <Component
-      className={`${handlee.className} ${className} w-max px-4 py-2 my-4 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:-z-10 after:bg-accent`}
+      className={`${handlee.className} ${className} title w-max px-4 py-2 my-4 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:-z-10 after:bg-accent`}
     >
       {text}
     </Component>

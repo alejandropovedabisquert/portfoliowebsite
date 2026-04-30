@@ -8,7 +8,6 @@
       "title": "Soy Alejandro",
       "job": "Desarrollador <span>Frontend</span>",
       "description": "<strong>+3 años de experiencia</strong> desde Valencia, España 🇪🇸. Me especializo en transformar ideas en aplicaciones web <strong>diferentes</strong> y <strong>accesibles</strong> para todos.",
-      "stack": "Mi <strong>stack</strong> favorito: Next.js · React · TailwindCSS",
       "CTAs": [
         {
           "label": "Contáctame",
@@ -29,7 +28,7 @@
           "icon": "linkedin"
         },
         {
-          "label": "Descargar mi CV",
+          "label": "Descargar CV",
           "href": "/pdf/CV_Alejandro_Poveda_Bisquert.pdf",
           "target": "_blank",
           "icon": "download"
@@ -45,7 +44,7 @@
           "position": "Programador Web",
           "company": "Avantio",
           "duration": "Mayo 2023 - Actualidad",
-          "description": "Desarrollo de plataformas web optimizadas para el sector turístico con foco en conversión y experiencia de usuario. Creación de extensión Chrome para automatización de procesos, reduciendo tiempos de resolución de incidencias para equipos de Project Managers.  Mantenimiento proactivo del framework interno y aplicación de estándares de accesibilidad, garantizando calidad técnica y operatividad continua.",
+          "description": "<strong>Desarrollo de plataformas web optimizadas</strong> para el sector turístico con foco en <strong>conversión</strong> y <strong>experiencia de usuario</strong>. <strong>Creación de extensión Chrome</strong> para <strong>automatización de procesos</strong>, reduciendo tiempos de resolución de incidencias para equipos de Project Managers. <strong>Mantenimiento proactivo del framework interno</strong> y aplicación de <strong>estándares de accesibilidad</strong>, garantizando <strong>calidad técnica</strong> y <strong>operatividad continua</strong>.",
           "stack": [
             "javascript",
             "html",
@@ -59,7 +58,7 @@
           "position": "Programador Web Junior",
           "company": "Digital Value",
           "duration": "Marzo 2021 - Mayo 2023",
-          "description": "Webmaster especializado en Drupal, responsable de la gestión y  mantenimiento de portales institucionales de ayuntamientos en la  Comunidad Valenciana y otras regiones.  Análisis e implementación de  mejoras de accesibilidad web conforme a normativas, optimizando la  usabilidad para usuarios con discapacidad. Atención técnica directa a  clientes institucionales, garantizando resolución efectiva de  incidencias y alta satisfacción en los proyectos.",
+          "description": "<strong>Webmaster especializado en Drupal</strong>, responsable de la <strong>gestión y mantenimiento de portales institucionales</strong> de ayuntamientos en la <strong>Comunidad Valenciana</strong> y otras regiones. <strong>Análisis e implementación de mejoras de accesibilidad web</strong> conforme a normativas, optimizando la <strong>usabilidad para usuarios con discapacidad</strong>. <strong>Atención técnica directa a clientes institucionales</strong>, garantizando <strong>resolución efectiva de incidencias</strong> y <strong>alta satisfacción</strong> en los proyectos.",
           "stack": [
             "javascript",
             "html",
@@ -99,6 +98,29 @@
           ]
         },
         {
+          "title": "User Management System",
+          "description": "Sistema de gestión de usuarios para aplicaciones web, permitiendo la administración de roles y perfiles de usuario.",
+          "image": "/projects/featured/user-manager.webp",
+          "CTAs": [
+            {
+              "icon": "github",
+              "label": "Ver Código",
+              "href": "https://github.com/alejandropovedabisquert/usermanager",
+              "target": "_blank"
+            }
+          ],
+          "stack": [
+            "nextjs",
+            "react",
+            "nodejs",
+            "mongodb",
+            "typescript",
+            "tailwindcss",
+            "shadcnui",
+            "docker"
+          ]
+        },
+        {
           "title": "GameHub",
           "inDevelopment": false,
           "description": "GameHub es una web que permite a los usuarios explorar una amplia colección de videojuegos, filtrarlos,  buscar títulos y ver información detallada de cada juego.",
@@ -132,40 +154,31 @@
           "name": "Frontend",
           "technologies": [
             {
-              "name": "nextjs",
-              "basic": false
+              "name": "nextjs"
             },
             {
-              "name": "react",
-              "basic": false
+              "name": "react"
             },
             {
-              "name": "tailwindcss",
-              "basic": false
+              "name": "tailwindcss"
             },
             {
-              "name": "typescript",
-              "basic": false
+              "name": "typescript"
             },
             {
-              "name": "javascript",
-              "basic": false
+              "name": "javascript"
             },
             {
-              "name": "sass",
-              "basic": false
+              "name": "sass"
             },
             {
-              "name": "css",
-              "basic": false
+              "name": "css"
             },
             {
-              "name": "html",
-              "basic": false
+              "name": "html"
             },
             {
-              "name": "angular",
-              "basic": true
+              "name": "angular"
             }
           ]
         },
@@ -173,12 +186,16 @@
           "name": "Backend",
           "technologies": [
             {
-              "name": "php",
-              "basic": false
+              "name": "php"
             },
             {
-              "name": "laravel",
-              "basic": true
+              "name": "laravel"
+            },
+            {
+              "name": "nodejs"
+            },
+            {
+              "name": "mongodb"
             }
           ]
         },
@@ -186,20 +203,16 @@
           "name": "Herramientas & Plataformas",
           "technologies": [
             {
-              "name": "git",
-              "basic": false
+              "name": "git"
             },
             {
-              "name": "github",
-              "basic": false
+              "name": "github"
             },
             {
-              "name": "postman",
-              "basic": true
+              "name": "postman"
             },
             {
-              "name": "docker",
-              "basic": true
+              "name": "docker"
             }
           ]
         }
@@ -210,21 +223,54 @@
       "imgage": "/about/me.webp",
       "imageAlt": "Foto de la moto de Alejandro Poveda",
       "description": [
-        "Soy Alejandro Poveda, un <strong>Desarrollador Frontend</strong> que disfruta crear webs <strong>visualmente atractivas y accesibles</strong>. Me gusta entregar aplicaciones que combinen funcionalidad con un toque artístico.",
-        "Llevo más de 3 años desarrollando desde <strong>Valencia, España</strong>, y me especializo  en <strong>React, Next.js y JavaScript</strong>, siempre intentando escribir código limpio  y mantenible.",
-        "Cuando no estoy programando, probablemente esté en la moto, explorando  nuevas tecnologías, jugando videojuegos o buscando inspiración artística."
+        "<strong>Desarrollador frontend</strong> con varios años de experiencia construyendo interfaces web <strong>modernas, accesibles y visualmente cuidadas</strong>. Mi trabajo se centra principalmente en <strong>JavaScript y TypeScript</strong>, con especialización en <strong>React, Next.js y Angular</strong>, tecnologías con las que busco crear productos <strong>sólidos, mantenibles y con una gran experiencia de usuario</strong>.",
+        "Me gusta combinar <strong>funcionalidad y diseño</strong> para desarrollar soluciones que no solo funcionen bien, sino que también transmitan personalidad. Actualmente, además, estoy ampliando mis conocimientos en <strong>.NET</strong> para seguir evolucionando hacia la creación de productos y soluciones software más completas."
+      ]
+    },
+    "contact": {
+      "title": "Contacta conmigo",
+      "description": "¿Interesado en trabajar juntos? ¡Conectemos! Puedes enviarme un correo electrónico, revisar mi código en GitHub o conectarte conmigo en LinkedIn. También puedes descargar mi CV para obtener más información sobre mi experiencia y habilidades.",
+      "contactMethods": [
+        {
+          "icon": "mail",
+          "label": "Email",
+          "subtitle": "Envíame un mensaje",
+          "href": "mailto:alejandropovedabisquert@gmail.com",
+          "target": "_self"
+        },
+        {
+          "icon": "linkedin",
+          "label": "LinkedIn",
+          "subtitle": "Conéctate conmigo",
+          "href": "https://www.linkedin.com/in/alejandro-poveda-bisquert/",
+          "target": "_blank"
+        },
+        {
+          "icon": "github",
+          "label": "GitHub",
+          "subtitle": "Mira mi código",
+          "href": "https://github.com/alejandropovedabisquert",
+          "target": "_blank"
+        },
+        {
+          "icon": "download",
+          "label": "Descargar CV",
+          "subtitle": "Obtén mi currículum",
+          "href": "/pdf/CV_Alejandro_Poveda_Bisquert.pdf",
+          "target": "_blank"
+        }
       ]
     }
   },
   "navigation": [
     {
-      "label": "Experiencia",
-      "href": "#experiencia",
+      "label": "Sobre Mí",
+      "href": "#sobre-mi",
       "scrollTo": true
     },
     {
-      "label": "Proyectos",
-      "href": "#proyectos",
+      "label": "Experiencia",
+      "href": "#experiencia",
       "scrollTo": true
     },
     {
@@ -233,14 +279,14 @@
       "scrollTo": true
     },
     {
-      "label": "Sobre Mí",
-      "href": "#sobre-mi",
+      "label": "Proyectos",
+      "href": "#proyectos",
       "scrollTo": true
     },
     {
       "label": "Contacto",
-      "href": "mailto:alejandropovedabisquert@gmail.com",
-      "scrollTo": false
+      "href": "#contacto",
+      "scrollTo": true
     }
   ],
   "footer": {
